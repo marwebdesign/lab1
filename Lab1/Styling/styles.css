@@ -1,0 +1,420 @@
+/* general styling */
+html {
+  background: antiquewhite;
+  color: darkslategrey;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+  border-radius: 8px;
+}
+
+/* navigation bar*/
+.navbar {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: grid;
+  background-color: #E48F45;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 60px;
+  width: 100%;
+  padding: 5px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  color: rgb(107, 29, 29);
+}
+
+a:hover {
+  color: coral;
+}
+
+a:active {
+  color: rgb(239, 175, 175)
+}
+
+/* footer */
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: flex-end;
+  margin-top: 10px;
+  padding-right: 5%;
+}
+
+.icons {
+  grid-column-start: 2;
+}
+
+.icons img {
+  width: 30px;
+  height: auto;
+}
+
+.icons img:hover {
+  transform: scale(1.1)
+}
+
+/* Start page*/
+header {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px;
+  margin: 7px;
+}
+
+.startpage-section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+
+.startpage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #F5CCA0;
+  width: 80%;
+  border: 2px solid rgb(115, 54, 54);
+  border-radius: 8px;
+}
+
+.startpage-paragraph {
+  font-size: 14px;
+  text-align: center;
+  margin: 15px;
+  width: 70%;
+}
+
+strong {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example {
+  from {
+    color: black;
+  }
+
+  to {
+    color: #E48F45;
+  }
+}
+
+.startpage-section img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid black;
+  margin: 15px;
+}
+
+/* about me */
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+
+.about-me-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+  width: 80%;
+}
+
+.about-me-section img {
+  width: 60%;
+  height: auto;
+  border: 2px solid black;
+  margin-bottom: 15px;
+}
+
+.about-me-section img:hover {
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+.about-me-box {
+  display: flex;
+  background-color: #E48F45;
+  margin: 10px;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 20px;
+  border: 2px solid rgb(115, 54, 54);
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.about-me-text {
+  display: none;
+}
+
+img:hover+.about-me-text {
+  display: block;
+}
+
+/* My work */
+.mywork-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-container,
+.studies-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  border: 2px solid rgb(107, 29, 29);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+span {
+  color: #994D1C;
+  font-weight: 700;
+  padding-right: 5px;
+}
+
+table {
+  width: 50%;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  padding: 3px;
+}
+
+/* Contact me */
+.contact-me-form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-me-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  background-color: #F5CCA0;
+  font-size: 14px;
+  margin: 10px;
+  border: 2px solid rgb(115, 54, 54);
+  border-radius: 8px;
+}
+
+.written {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  text-align: left;
+}
+
+#submitbutton {
+  width: 30%;
+  margin-top: 10px;
+  background-color: antiquewhite;
+  font-size: 15px;
+  padding: 4px;
+  border: 2px solid rgb(115, 54, 54);
+  border-radius: 5px;
+}
+
+/* tablet */
+@media (min-width: 668px) and (max-width: 1024px) {
+
+  nav {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  a {
+    font-size: 22px;
+  }
+
+  header {
+    font-size: 40px;
+    padding-top: 17px;
+  }
+
+  .icons img {
+    width: 40px;
+    height: auto;
+  }
+
+  .startpage {
+    display: flex;
+    justify-self: flex-start;
+  }
+
+  .startpage-section {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .startpage-section img {
+    width: 60%;
+  }
+
+  .startpage-container {
+    width: 70%;
+    justify-content: center;
+  }
+
+  .startpage-paragraph {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    margin: 15px;
+  }
+
+  .about-me-section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .about-me-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .about-me-box {
+    width: 60%;
+    margin: 20px;
+    justify-content: center;
+  }
+
+  .contact-me-container {
+    width: 50%;
+    font-size: 17px;
+  }
+
+  #submitbutton {
+    width: 40%;
+    font-size: 20px;
+  }
+}
+
+/* desktop */
+@media (min-width: 1025px) {
+
+  nav {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  a {
+    font-size: 30px;
+  }
+
+  header {
+    font-size: 50px;
+    padding-top: 20px;
+  }
+
+  .icons img {
+    width: 50px;
+    height: auto;
+  }
+
+  .startpage {
+    display: flex;
+    justify-self: flex-start;
+  }
+
+  .about-me-section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .about-me-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .about-me-box {
+    width: 70%;
+    margin: 20px;
+    justify-content: center;
+  }
+
+
+  .startpage-section {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .startpage-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    justify-items: center;
+  }
+
+  .startpage-section img {
+    width: 70%;
+  }
+
+  .startpage-paragraph {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    margin: 15px;
+    order: -1;
+  }
+
+  .contact-me-container {
+    width: 50%;
+    font-size: 20px;
+  }
+
+  .written {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #submitbutton {
+    width: 50%;
+    font-size: 22px;
+  }
+}
