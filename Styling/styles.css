@@ -266,6 +266,13 @@ td {
   border-radius: 5px;
 }
 
+.textfield {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  border: 1px dotted rgb(107, 29, 29);
+  padding: 5px;
+}
+
 /* tablet */
 @media (min-width: 668px) and (max-width: 1024px) {
 
