@@ -126,6 +126,24 @@ strong {
   margin: 15px;
 }
 
+.iconlinks {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  /* width: 80%; */
+}
+
+.iconlinks a {
+  font-family: 'Courier New', Courier, monospace;
+  color: darkslategray;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+#icons8 {
+  text-decoration: none;
+}
+
 /* about me */
 .about-me-section {
   display: flex;
